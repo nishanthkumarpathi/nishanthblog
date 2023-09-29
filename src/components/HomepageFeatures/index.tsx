@@ -9,36 +9,35 @@ type FeatureItem = {
 };
 
 const FeatureList: FeatureItem[] = [
+
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Real-World Projects',
+    Svg: require('@site/static/img/project.svg').default,
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
+    <>
+    Explore Real-World Projects on my blog to bridge the gap between learning and practical application, unlocking tangible skills for the modern technological landscape
+    </>
+    ),
+  },
+    {
+    title: 'Step-by-Step Tutorials',
+    Svg: require('@site/static/img/process.svg').default,
+    description: (
+    <>
+        Navigate the complexities of today's tech world with my detailed Step-by-Step Tutorials, turning daunting tasks into manageable projects.
+    </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'User Guides',
+    Svg: require('@site/static/img/userguide.svg').default,
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+    <>
+        Master the intricacies of cutting-edge tools with my Technical User Guides, tailored to empower your tech journey from novice to expert.
+    </>
     ),
   },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+   
 ];
 
 function Feature({title, Svg, description}: FeatureItem) {
@@ -59,6 +58,9 @@ export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
+        <h2 style={{ fontWeight: 'bold', textAlign: 'center', paddingBottom: '2rem' }}>
+        Here's What My Blog Promises to Deliver to Enrich Your Tech-Savvy Journey
+        </h2>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
